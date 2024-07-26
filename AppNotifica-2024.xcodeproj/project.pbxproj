@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230221FE2C53D680007C15C0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230221FD2C53D680007C15C0 /* Coordinator.swift */; };
 		23495DCF2C51307D00D20006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23495DCE2C51307D00D20006 /* AppDelegate.swift */; };
 		23495DD12C51307D00D20006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23495DD02C51307D00D20006 /* SceneDelegate.swift */; };
 		23495DD32C51307D00D20006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23495DD22C51307D00D20006 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230221FD2C53D680007C15C0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		23495DCB2C51307D00D20006 /* AppNotifica-2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppNotifica-2024.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23495DCE2C51307D00D20006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23495DD02C51307D00D20006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				23495DCE2C51307D00D20006 /* AppDelegate.swift */,
 				23495DD02C51307D00D20006 /* SceneDelegate.swift */,
+				230221FD2C53D680007C15C0 /* Coordinator.swift */,
 				23495DD22C51307D00D20006 /* ViewController.swift */,
 				23495DD42C51307D00D20006 /* Main.storyboard */,
 				23495DD72C51308200D20006 /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230221FE2C53D680007C15C0 /* Coordinator.swift in Sources */,
 				23495DD32C51307D00D20006 /* ViewController.swift in Sources */,
 				23495DCF2C51307D00D20006 /* AppDelegate.swift in Sources */,
 				23495DD12C51307D00D20006 /* SceneDelegate.swift in Sources */,
