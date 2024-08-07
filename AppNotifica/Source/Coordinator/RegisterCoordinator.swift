@@ -29,7 +29,7 @@ class RegisterCoordinator: Coordinator {
 
     }
     
-    private func gotoLogar() {
+    func gotoLogar() {
         navigationController.popViewController(animated: true)
     }
 }
