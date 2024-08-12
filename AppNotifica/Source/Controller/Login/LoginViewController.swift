@@ -16,6 +16,7 @@ class LoginViewController: ViewControllerDefault {
         let loginView = LoginView()
         loginView.onRegisterTap = self.onRegisterTap
         loginView.onLoginTap = self.onLoginTap
+        
         return loginView
     }()
     
