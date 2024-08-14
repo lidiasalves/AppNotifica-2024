@@ -1,16 +1,15 @@
 //
-//  HomeView.swift
+//  NovoOcorrenciaView.swift
 //  AppNotifica
 //
-//  Created by IFBIOTIC17 on 07/08/24.
+//  Created by IFBIOTIC20 on 14/08/24.
 //
 
-import Foundation
 
 import Foundation
 import UIKit
 
-class HomeView: ViewDefault {
+class NovaOcorrenciaView: ViewDefault {
     
     override func setupVisualElements() {
         super.setupVisualElements()

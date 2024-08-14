@@ -26,7 +26,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 self.window?.rootViewController = navigationController
                 
                 //passo o navigationController daqui para o coordinator LoginCoordinatior
-                let coordinator = LoginCoordinator(navigationController: navigationController)
+                let coordinator = TabbarCoordinator(navigationController: navigationController)
+        
         
                 coordinator.start()
             }
