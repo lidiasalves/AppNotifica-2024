@@ -14,7 +14,7 @@ class NovaOcorrenciaCoordinator: Coordinator {
         let viewController = NovaOcorrenciaViewController()
         viewController.tabBarItem.title = "Nova Ocorrência"
         viewController.tabBarItem.image = UIImage(systemName: "note.text.badge.plus")
-        return novaOcorrenciaViewController
+        return viewController
     }()
     
     init(navigationController: UINavigationController) {

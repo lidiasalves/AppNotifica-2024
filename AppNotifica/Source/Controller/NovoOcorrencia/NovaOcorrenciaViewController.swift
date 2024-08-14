@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class NovaOcorrenciaViewController: UIViewController {
+class NovaOcorrenciaViewController: ViewControllerDefault {
     //cria uma variável
     lazy var viewMain: NovaOcorrenciaView = {
         let novaOcorrenciaViewController = NovaOcorrenciaView()
@@ -24,8 +24,7 @@ class NovaOcorrenciaViewController: UIViewController {
     // é executado quando está carregando
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Título"
-        
+        self.title = "Nova Ocorrência"
         self.navigationController?.navigationBar.prefersLargeTitles=true
     }
 }
