@@ -10,21 +10,36 @@ import Foundation
 import UIKit
 
 class NovaOcorrenciaViewController: ViewControllerDefault {
-    //cria uma variável
-    lazy var viewMain: NovaOcorrenciaView = {
-        let novaOcorrenciaViewController = NovaOcorrenciaView()
+    //MARK: - Closures
+    
+    let viewModel: NovaOcorrenciaViewModel
+    init(viewModel: NovaOcorrenciaViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    lazy var novaOcorrenciaView: NovaOcorrenciaView = {
+        let novaOcorrenciaView = NovaOcorrenciaView(viewModel: viewModel)
         
-        return novaOcorrenciaViewController
+        novaOcorrenciaView.onCameraTap = {
+            EscolherImagem().selecionadorImagem(self) { imagem in novaOcorrenciaView.setImage(image: imagem)
+            }
+        }
+        return novaOcorrenciaView
     }()
     
+    
     override func loadView(){
-        self.view = viewMain
+        self.view = novaOcorrenciaView
     }
     
     // é executado quando está carregando
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Nova Ocorrência"
-        self.navigationController?.navigationBar.prefersLargeTitles=true
     }
 }

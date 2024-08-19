@@ -19,11 +19,11 @@ class RegisterView: ViewDefault, UITextFieldDelegate {
     
     
     //cria a função com as propriadades da text no login
-    var emailTextField = TextFieldDefault (placeholder: "E-mail", keyboardType: .emailAddress, returnKeyType: .next)
+    var emailTextField = TextFieldDefault (placeholder: "E-mail", keyBordType: .emailAddress, returnKeyType: .next)
     
     //cria a função com as propriadades da text no login
     var senhaTextField: TextFieldDefault = {
-        let textField = TextFieldDefault (placeholder: "Senha", keyboardType: .emailAddress, returnKeyType: .next)
+        let textField = TextFieldDefault (placeholder: "Senha", keyBordType: .emailAddress, returnKeyType: .next)
         textField.isSecureTextEntry = true
             
             return textField
@@ -31,7 +31,7 @@ class RegisterView: ViewDefault, UITextFieldDelegate {
     
     //cria a função com as propriadades da text no login
     var confirmaSenhaTextField: TextFieldDefault = {
-        let textField = TextFieldDefault (placeholder: "Confirme sua senha", keyboardType: .emailAddress, returnKeyType: .done)
+        let textField = TextFieldDefault (placeholder: "Confirme sua senha", keyBordType: .emailAddress, returnKeyType: .done)
         textField.isSecureTextEntry = true
         
         return textField

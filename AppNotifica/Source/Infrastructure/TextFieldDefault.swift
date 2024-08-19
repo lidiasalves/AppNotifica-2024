@@ -10,20 +10,29 @@ import UIKit
 
 class TextFieldDefault: UITextField{
     
-    init(placeholder: String, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default) {
+    //constrututor recebendo somente o placeholder
+    init(placeholder: String) {
+        super.init(frame: .zero)
+    
+        initDefault(placeholder: placeholder, keyBordType: .default, returnKeyType: .default)
+    }
+    
+    //construtor recebendo a string + o tipo do teclado e o tipo do retorno
+    init(placeholder: String, keyBordType: UIKeyboardType, returnKeyType: UIReturnKeyType ) {
           super.init(frame: .zero)
           
-        initDefault(placeholder: placeholder, keyboardType: keyboardType, returnKeyType: returnKeyType)
+        initDefault(placeholder: placeholder, keyBordType: keyBordType, returnKeyType: returnKeyType)
+        
       }
     
   
-    private func initDefault(placeholder: String, keyboardType: UIKeyboardType, returnKeyType: UIReturnKeyType) {
-        self.backgroundColor = .textFieldBackGroundColor
-        self.placeholder = placeholder
-        self.keyboardType = keyboardType
-        self.returnKeyType = returnKeyType
-        self.translatesAutoresizingMaskIntoConstraints = false
-       }
+    private func initDefault(placeholder: String, keyBordType: UIKeyboardType, returnKeyType: UIReturnKeyType) {
+            self.backgroundColor = .textFieldBackGroundColor
+            self.placeholder = placeholder
+            self.keyboardType = keyBordType
+            self.returnKeyType = returnKeyType
+            self.translatesAutoresizingMaskIntoConstraints = false
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
